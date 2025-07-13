@@ -675,26 +675,28 @@ figure.effect-goliath:hover p {
 .gallery-container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px; /* Aumentamos el espacio entre imágenes para que respiren mejor */
     flex-wrap: wrap;
+    padding: 0; /* Quitamos padding heredado si lo hay */
 }
 
 .gallery-img {
-    width: 70%; /* Increased width to make images wider, adjust as needed */
-    height: auto; /* Removes fixed height to preserve aspect ratio */
-    object-fit: contain; /* Ensures the entire image is visible without cropping */
-    border-radius: 5px; /* Optional: keeps rounded corners */
+    width: 35%; /* Más ancho, ajustable si quieres más o menos */
+    height: auto; /* Mantenemos la altura automática para respetar proporciones */
+    object-fit: contain; /* Asegura que se vea toda la imagen */
+    max-height: 400px; /* Límite para que no se disparen si las imágenes son muy altas */
+    border-radius: 5px; /* Bordes redondeados, opcional */
 }
 
-/* Responsive adjustments */
+/* Ajustes responsivos */
 @media (max-width: 768px) {
     .gallery-img {
-        width: 70%; /* Wider images on tablets, two per row */
+        width: 45%; /* Dos por fila en tablets, más anchas */
     }
 }
 
 @media (max-width: 480px) {
     .gallery-img {
-        width: 100%; /* Full width on phones, one per row */
+        width: 100%; /* Una por fila en móviles */
     }
 }
