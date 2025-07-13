@@ -672,3 +672,31 @@ figure.effect-goliath:hover p {
         height: 100px;
     }
 }
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    width: 23%; /* Roughly 1/4 of the container width, accounting for gaps */
+    height: 150px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-img {
+        width: 48%; /* Two images per row on tablets */
+        height: 100px; /* Smaller height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-img {
+        width: 100%; /* One image per row on phones */
+        height: 120px;
+    }
+}
