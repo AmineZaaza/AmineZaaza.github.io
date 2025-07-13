@@ -680,23 +680,21 @@ figure.effect-goliath:hover p {
 }
 
 .gallery-img {
-    width: 23%; /* Roughly 1/4 of the container width, accounting for gaps */
-    height: 150px; /* Fixed height for uniformity */
-    object-fit: cover; /* Ensures images fill the space without distortion */
-    border-radius: 5px; /* Optional: adds rounded corners */
+    width: 30%; /* Increased width to make images wider, adjust as needed */
+    height: auto; /* Removes fixed height to preserve aspect ratio */
+    object-fit: contain; /* Ensures the entire image is visible without cropping */
+    border-radius: 5px; /* Optional: keeps rounded corners */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .gallery-img {
-        width: 48%; /* Two images per row on tablets */
-        height: 100px; /* Smaller height for smaller screens */
+        width: 45%; /* Wider images on tablets, two per row */
     }
 }
 
 @media (max-width: 480px) {
     .gallery-img {
-        width: 100%; /* One image per row on phones */
-        height: 120px;
+        width: 100%; /* Full width on phones, one per row */
     }
 }
