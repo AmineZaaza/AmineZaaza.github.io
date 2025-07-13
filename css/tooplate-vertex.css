@@ -680,7 +680,7 @@ figure.effect-goliath:hover p {
 }
 
 .gallery-img {
-    width: 30%; /* Increased width to make images wider, adjust as needed */
+    width: 70%; /* Increased width to make images wider, adjust as needed */
     height: auto; /* Removes fixed height to preserve aspect ratio */
     object-fit: contain; /* Ensures the entire image is visible without cropping */
     border-radius: 5px; /* Optional: keeps rounded corners */
@@ -689,7 +689,7 @@ figure.effect-goliath:hover p {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .gallery-img {
-        width: 45%; /* Wider images on tablets, two per row */
+        width: 70%; /* Wider images on tablets, two per row */
     }
 }
 
